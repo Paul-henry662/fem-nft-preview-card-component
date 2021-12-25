@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Variables*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --black /*main BG*/: hsl(217, 54%, 11%);
+    --very-dark-blue /*card BG*/: hsl(216, 50%, 16%);
+    --dark-blue /*line*/: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    height: 100vh;
+}
+body *{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+main{
+    height: 100%;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background: var(--very-dark-blue);
+    width: 350px;
+    border-radius: 0.8em;
+    padding: 1.2em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3em;
+}
+.card__img{
+    width: 100%;
+    border-radius: 0.8em;
+}
+.card__title{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 600;
+}
+.card__meta-info{
+    display: flex;
+    justify-content: space-between;
+}
+.card__price{
+    color: var(--cyan);
+    font-weight: 400;
+}
+.card__price::before{
+    content: url("./images/icon-ethereum.svg");
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.card__days-left::before{
+    content: url("./images/icon-clock.svg");
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.card__separator{
+    border: none;
+    border-top: 1px solid hsla(215, 52%, 70%, 0.3);
+}
+.card__author-avatar{
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 12px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+.card__author{
+    color: var(--white);
+}
+

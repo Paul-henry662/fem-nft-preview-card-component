@@ -2,37 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    
-    <title>Frontend Mentor | NFT preview card component</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <!--/Google fonts-->
+
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
     <main>
       <div class="card">
-        <header class="card__header">
-          <img class="card__img" src="./images/image-equilibrium.jpg" alt="A cube in equilibrium">
+        <img src="./images/image-equilibrium.jpg" alt="A cube illustration." class="card__img">
 
-          <h1 class="card__title">Equilibrium #3429</h1>
-  
-        </header>
+        <h1 class="card__title">Equilibrium #3429</h1>
 
-        <main class="card__main">
-          <p class="card__paragraph">Our Equilibrium collection promotes balance and calm.</p>
-        
-          <div class="card__details">
-            <div class="card__price">0.041 ETH</div>
-            <div class="card__days-left">3 days left</div>
-          </div>
-        </main>
-        
-        <footer class="card__footer">
-          <div class="card__attribution">
-            Creation of Jules Wyvern
-          </div>
-        </footer>
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="card__meta-info">
+          <div class="card__price">0.041ETH</div>
+          <div class="card__days-left">3 days left</div>
+        </div>
+
+        <hr class="card__separator">
+
+        <div class="card__attribution">
+          <img src="./images/image-avatar.png" alt="Jules Wyvern's avatar image" class="card__author-avatar">
+          Creation of <span class="card__author">Jules Wyvern</span>
+        </div>
       </div>
     </main>
   </body>
